@@ -1,0 +1,78 @@
+/* Fond général du chat */
+ion-content {
+  --background: #E5DDD5 !important; /* Fond vert clair type Telegram */
+}
+
+/* Footer */
+ion-footer {
+  --background: #F0F0F0 !important;
+  border-top: 1px solid #ccc;
+}
+
+/* Bulles de messages */
+.bubble {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  max-width: 70%;
+  border-radius: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s;
+}
+
+.bubble.own {
+  background: #DCF8C6; /* Vert clair */
+  color: #000 !important; /* Texte noir */
+  align-self: flex-end;
+}
+
+.bubble.other {
+  background: #FFFFFF; /* Blanc */
+  color: #000 !important; /* Texte noir */
+  align-self: flex-start;
+}
+
+/* Nom de l'expéditeur pour les autres messages */
+.bubble.other ion-label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+/* Barre de réponse */
+.reply-banner {
+  background: #f1f3f4;
+  padding: 6px 8px;
+  font-size: 12px;
+  color: #333;
+  border-left: 4px solid #0088FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Input message */
+ion-input {
+  --background: #fff !important; /* Blanc */
+  --color: #000 !important;      /* Texte noir */
+  --padding-start: 12px;
+  --border-radius: 18px;
+  font-size: 16px;
+}
+
+ion-input::part(native) {
+  color: #000;                     
+  font-size: 16px;
+}
+
+ion-input::part(placeholder) {
+  color: #888;                    
+}
+
+/* Animation des bulles */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

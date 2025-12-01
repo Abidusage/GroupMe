@@ -1,0 +1,24 @@
+ion-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--ion-color-primary);
+  margin-top: 10px;
+}
+
+p {
+  color: var(--ion-color-medium);
+  margin-bottom: 20px;
+}
+
+ion-button {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+ion-item {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

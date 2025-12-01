@@ -1,0 +1,15 @@
+/* src/pages/Groups.css */
+h2 {
+  font-weight: 600;
+  color: var(--ion-color-primary);
+  margin-bottom: 10px;
+}
+
+ion-input {
+  margin-bottom: 10px;
+}
+
+ion-item {
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
