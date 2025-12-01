@@ -46,6 +46,7 @@ const Register: React.FC = () => {
       return;
     }
 
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setToastColor('danger');
